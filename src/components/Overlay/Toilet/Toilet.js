@@ -1,7 +1,8 @@
 import React from 'react';
-import { IconContext } from 'react-icons';
-
 import './Toilet.css';
+
+import { IconContext } from 'react-icons';
+import { FaSmile, FaMeh, FaScrewdriver } from 'react-icons/fa';
 
 class Toilet extends React.Component {
   constructor(props) {
@@ -10,9 +11,11 @@ class Toilet extends React.Component {
 
   render() {
     return (
-      <IconContext.Provider value={{ color: "green", className: "far fa-smile-wink" }}>
+      <IconContext.Provider value = {{ className: "freetoilet"}}>
         <div className="toilet" style={{"left": `${this.props.left}`, "top": `${this.props.top}`}}>
-          {/* <FaFolder /> */}
+          <FaSmile />
+          <FaMeh />
+          <FaScrewdriver />
         </div>
       </IconContext.Provider>
     );
