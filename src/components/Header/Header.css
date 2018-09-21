@@ -1,6 +1,11 @@
 .header {
     width: 100%;
-    height: 50px;
-
-    background: brown;
+    height: 90px;
+    background: linear-gradient(90deg,#f58249,#fd5c3c);
+   background-image: linear-gradient(90deg, rgb(245, 130, 73), rgb(253, 92, 60));background: linear-gradient(90deg,#f58249,#fd5c3c);
+   background-image: linear-gradient(90deg, rgb(245, 130, 73), rgb(253, 92, 60));
+}
+.logoheader{
+width: 100%;
+height: 140%;
 }
