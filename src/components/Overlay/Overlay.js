@@ -7,6 +7,27 @@ import Meetingrooms from '../../wc_map.png';
 import './Overlay.css';
 
 class Overlay extends Component {
+    state = {
+        toilet1: 2,
+        toilet2: 0,
+        toilet3: 0,
+        toilet4: 0,
+        toilet5: 0,
+        toilet6: 0,
+        toilet7: 1,
+        toilet8: 0,
+        toilet9: 0,
+        toilet10: 1,
+        toilet11: 0,
+        toilet12: 0
+    };
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({toilet1: 1, toilet3: 1, toilet7: 2})
+        }, 2000)
+    }
+
     toilets = [
         {left: '125px', top: '400px', name: 'toilet1'},
         {left: '90px', top: '220px', name: 'toilet2'},
@@ -24,7 +45,8 @@ class Overlay extends Component {
 
     render() {
         const allToilets = this.toilets.map(toilet => {
-            return <Toilet key={toilet.name} {...toilet} />
+            const toiletName = toilet.name;
+            return <Toilet key={toilet.name} {...toilet} status={this.state[toiletName]}/>
         })
 
         return(

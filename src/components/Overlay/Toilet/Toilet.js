@@ -10,12 +10,16 @@ class Toilet extends React.Component {
   };
 
   render() {
+    const icons = [
+      <FaSmile />,
+      <FaMeh />,
+      <FaScrewdriver />
+    ];
+
     return (
       <IconContext.Provider value = {{ className: "freetoilet"}}>
         <div className="toilet" style={{"left": `${this.props.left}`, "top": `${this.props.top}`}}>
-          <FaSmile />
-          <FaMeh />
-          <FaScrewdriver />
+          {icons[this.props.status]}
         </div>
       </IconContext.Provider>
     );
