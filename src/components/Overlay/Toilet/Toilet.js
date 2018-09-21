@@ -11,7 +11,7 @@ class Toilet extends React.Component {
   render() {
     return (
       <IconContext.Provider value={{ color: "green", className: "far fa-smile-wink" }}>
-        <div className="toilet">
+        <div className="toilet" style={{"left": `${this.props.left}`, "top": `${this.props.top}`}}>
           {/* <FaFolder /> */}
         </div>
       </IconContext.Provider>
