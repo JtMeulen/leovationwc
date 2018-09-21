@@ -30,17 +30,17 @@ class Overlay extends Component {
 
     toilets = [
         {left: '125px', top: '400px', name: 'toilet1'},
-        {left: '90px', top: '220px', name: 'toilet2'},
-        {left: '150px', top: '220px', name: 'toilet3'},
-        {left: '215px', top: '220px', name: 'toilet4'},
-        {left: '275px', top: '220px', name: 'toilet5'},
-        {left: '350px', top: '220px', name: 'toilet6'},
-        {left: '410px', top: '220px', name: 'toilet7'},
-        {left: '500px', top: '235px', name: 'toilet8'},
+        {left: '85px', top: '225px', name: 'toilet2'},
+        {left: '145px', top: '225px', name: 'toilet3'},
+        {left: '210px', top: '225px', name: 'toilet4'},
+        {left: '270px', top: '225px', name: 'toilet5'},
+        {left: '345px', top: '225px', name: 'toilet6'},
+        {left: '410px', top: '225px', name: 'toilet7'},
+        {left: '495px', top: '230px', name: 'toilet8'},
         {left: '500px', top: '325px', name: 'toilet9'},
         {left: '500px', top: '380px', name: 'toilet10'},
-        {left: '275px', top: '400px', name: 'toilet11'},
-        {left: '350px', top: '400px', name: 'toilet12'}
+        {left: '260px', top: '395px', name: 'toilet11'},
+        {left: '357px', top: '395px', name: 'toilet12'}
     ];
 
     render() {

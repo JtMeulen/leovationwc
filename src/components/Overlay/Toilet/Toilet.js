@@ -11,9 +11,9 @@ class Toilet extends React.Component {
 
   render() {
     const icons = [
-      <FaSmile />,
-      <FaMeh />,
-      <FaScrewdriver />
+      <FaSmile className="freetoilet" / > ,
+      <FaMeh className="busytoilet" / > ,
+      <FaScrewdriver className="maintanance" / >
     ];
 
     return (
