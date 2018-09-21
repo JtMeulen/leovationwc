@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Toilet from './Toilet/Toilet';
-import Shit from 'nothing;'
 
 import Meetingrooms from '../../wc_map.png';
 
