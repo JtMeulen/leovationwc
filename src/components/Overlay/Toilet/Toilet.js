@@ -12,7 +12,7 @@ class Toilet extends React.Component {
   render() {
     return (
       <IconContext.Provider value = {{ className: "freetoilet"}}>
-        <div>
+        <div className = "toilet" style = {{"left": `${this.props.left}`, "top": `${this.props.top}`}}>
           <FaSmile />
           <FaMeh />
           <FaScrewdriver />

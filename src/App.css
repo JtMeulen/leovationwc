@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-}
-
-.mapImage {
-  width: 50%;
+  display: flex;
+  justify-content: center;
 }
