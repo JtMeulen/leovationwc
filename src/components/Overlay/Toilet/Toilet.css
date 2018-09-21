@@ -1,6 +1,18 @@
-.toilet {
-    background: green;
-    width: 25px;
-    height: 25px;
-    position: absolute;
+
+.freetoilet {
+    color: green;
+    width: 35px;
+    height: 35px;
+}
+
+.busytoilet {
+    color: red;
+    width: 35px;
+    height: 35px;
+}
+
+.maintanance {
+    color: orange;
+    width: 35px;
+    height: 35px;
 }
