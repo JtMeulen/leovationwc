@@ -1,20 +1,20 @@
 
 .freetoilet {
-    color: green;
-    width: 35px;
-    height: 35px;
+    color: rgb(13, 139, 13);
+    width: 30px;
+    height: 30px;
 }
 
 .busytoilet {
-    color: red;
-    width: 35px;
-    height: 35px;
+    color: rgb(255, 68, 0);
+    width: 30px;
+    height: 30px;
 }
 
 .maintanance {
-    color: orange;
-    width: 35px;
-    height: 35px;
+    color: yellow;
+    width: 30px;
+    height: 30px;
 }
 
 .toilet {
