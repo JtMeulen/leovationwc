@@ -24,6 +24,26 @@ class Overlay extends Component {
         toilet11: 0
     };
 
+    componentWillMount() {
+        axios.get('https://leovationwc.firebaseio.com/toilets.json')
+            .then(res => {
+                this.setState({
+                    toilet0: this.getData(res.data, 0),
+                    toilet1: this.getData(res.data, 1),
+                    toilet2: this.getData(res.data, 2),
+                    toilet3: this.getData(res.data, 3),
+                    toilet4: this.getData(res.data, 4),
+                    toilet5: this.getData(res.data, 5),
+                    toilet6: this.getData(res.data, 6),
+                    toilet7: this.getData(res.data, 7),
+                    toilet8: this.getData(res.data, 8),
+                    toilet9: this.getData(res.data, 9),
+                    toilet10: this.getData(res.data, 10),
+                    toilet11: this.getData(res.data, 11)
+                })
+            });
+    }
+
     componentDidMount() {
         setInterval(() => {
             axios.get('https://leovationwc.firebaseio.com/toilets.json')
@@ -51,18 +71,18 @@ class Overlay extends Component {
     }
 
     toilets = [
-        {left: '125px', top: '400px', name: 'toilet1'},
-        {left: '85px', top: '225px', name: 'toilet2'},
-        {left: '145px', top: '225px', name: 'toilet3'},
-        {left: '210px', top: '225px', name: 'toilet4'},
-        {left: '270px', top: '225px', name: 'toilet5'},
-        {left: '345px', top: '225px', name: 'toilet6'},
-        {left: '410px', top: '225px', name: 'toilet7'},
-        {left: '495px', top: '230px', name: 'toilet8'},
-        {left: '500px', top: '325px', name: 'toilet9'},
-        {left: '500px', top: '380px', name: 'toilet10'},
-        {left: '260px', top: '395px', name: 'toilet11'},
-        {left: '357px', top: '395px', name: 'toilet12'}
+        {left: '125px', top: '400px', name: 'toilet0'},
+        {left: '85px', top: '225px', name: 'toilet1'},
+        {left: '145px', top: '225px', name: 'toilet2'},
+        {left: '210px', top: '225px', name: 'toilet3'},
+        {left: '270px', top: '225px', name: 'toilet4'},
+        {left: '345px', top: '225px', name: 'toilet5'},
+        {left: '410px', top: '225px', name: 'toilet6'},
+        {left: '495px', top: '230px', name: 'toilet7'},
+        {left: '500px', top: '325px', name: 'toilet8'},
+        {left: '500px', top: '380px', name: 'toilet9'},
+        {left: '260px', top: '395px', name: 'toilet10'},
+        {left: '357px', top: '395px', name: 'toilet11'}
     ];
 
     render() {
