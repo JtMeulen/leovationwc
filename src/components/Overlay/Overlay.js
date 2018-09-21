@@ -63,7 +63,7 @@ class Overlay extends Component {
                     toilet11: this.getData(res.data, 11)
                 })
             });
-        }, 5000);
+        }, 1000);
     }
 
     getData = (data, idx) => {
