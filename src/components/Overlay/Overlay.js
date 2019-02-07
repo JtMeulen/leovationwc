@@ -21,7 +21,11 @@ class Overlay extends Component {
         toilet8: 0,
         toilet9: 0,
         toilet10: 0,
-        toilet11: 0
+        toilet11: 0,
+        toilet12: 0,
+        toilet13: 0,
+        toilet14: 0,
+        toilet15: 0
     };
 
     // componentWillMount() {
@@ -77,18 +81,18 @@ class Overlay extends Component {
     }
 
     toilets = [
-        {left: '125px', top: '400px', name: 'toilet0'},
-        {left: '85px', top: '225px', name: 'toilet1'},
-        {left: '145px', top: '225px', name: 'toilet2'},
-        {left: '210px', top: '225px', name: 'toilet3'},
-        {left: '270px', top: '225px', name: 'toilet4'},
-        {left: '345px', top: '225px', name: 'toilet5'},
-        {left: '410px', top: '225px', name: 'toilet6'},
-        {left: '495px', top: '230px', name: 'toilet7'},
-        {left: '500px', top: '325px', name: 'toilet8'},
-        {left: '500px', top: '380px', name: 'toilet9'},
-        {left: '260px', top: '395px', name: 'toilet10'},
-        {left: '357px', top: '395px', name: 'toilet11'}
+        {left: '15.62%', top: '50.00%', name: 'toilet0'},
+        {left: '10.62%', top: '28.13%', name: 'toilet1'},
+        {left: '18.13%', top: '28.13%', name: 'toilet2'},
+        {left: '26.25%', top: '28.13%', name: 'toilet3'},
+        {left: '33.75%', top: '28.13%', name: 'toilet4'},
+        {left: '43.13%', top: '28.13%', name: 'toilet5'},
+        {left: '51.25%', top: '28.13%', name: 'toilet6'},
+        {left: '61.88%', top: '28.75%', name: 'toilet7'},
+        {left: '62.50%', top: '40.63%', name: 'toilet8'},
+        {left: '62.50%', top: '47.50%', name: 'toilet9'},
+        {left: '32.50%', top: '49.38%', name: 'toilet10'},
+        {left: '44.63%', top: '49.38%', name: 'toilet11'}
     ];
 
     render() {
