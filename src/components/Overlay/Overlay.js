@@ -24,47 +24,53 @@ class Overlay extends Component {
         toilet11: 0
     };
 
-    componentWillMount() {
-        axios.get('https://leovationwc.firebaseio.com/toilets.json')
-            .then(res => {
-                this.setState({
-                    toilet0: this.getData(res.data, 0),
-                    toilet1: this.getData(res.data, 1),
-                    toilet2: this.getData(res.data, 2),
-                    toilet3: this.getData(res.data, 3),
-                    toilet4: this.getData(res.data, 4),
-                    toilet5: this.getData(res.data, 5),
-                    toilet6: this.getData(res.data, 6),
-                    toilet7: this.getData(res.data, 7),
-                    toilet8: this.getData(res.data, 8),
-                    toilet9: this.getData(res.data, 9),
-                    toilet10: this.getData(res.data, 10),
-                    toilet11: this.getData(res.data, 11)
-                })
-            });
-    }
+    // componentWillMount() {
+    //     axios.get('https://leovationwc.firebaseio.com/toilets.json')
+    //         .then(res => {
+    //             this.setState({
+    //                 toilet0: this.getData(res.data, 0),
+    //                 toilet1: this.getData(res.data, 1),
+    //                 toilet2: this.getData(res.data, 2),
+    //                 toilet3: this.getData(res.data, 3),
+    //                 toilet4: this.getData(res.data, 4),
+    //                 toilet5: this.getData(res.data, 5),
+    //                 toilet6: this.getData(res.data, 6),
+    //                 toilet7: this.getData(res.data, 7),
+    //                 toilet8: this.getData(res.data, 8),
+    //                 toilet9: this.getData(res.data, 9),
+    //                 toilet10: this.getData(res.data, 10),
+    //                 toilet11: this.getData(res.data, 11)
+    //             })
+    //         });
+    // }
 
-    componentDidMount() {
-        setInterval(() => {
-            axios.get('https://leovationwc.firebaseio.com/toilets.json')
-            .then(res => {
-                this.setState({
-                    toilet0: this.getData(res.data, 0),
-                    toilet1: this.getData(res.data, 1),
-                    toilet2: this.getData(res.data, 2),
-                    toilet3: this.getData(res.data, 3),
-                    toilet4: this.getData(res.data, 4),
-                    toilet5: this.getData(res.data, 5),
-                    toilet6: this.getData(res.data, 6),
-                    toilet7: this.getData(res.data, 7),
-                    toilet8: this.getData(res.data, 8),
-                    toilet9: this.getData(res.data, 9),
-                    toilet10: this.getData(res.data, 10),
-                    toilet11: this.getData(res.data, 11)
-                })
-            });
-        }, 1000);
-    }
+    // componentDidMount() {
+    //     setInterval(() => {
+    //         axios.get('https://leovationwc.firebaseio.com/toilets.json')
+    //         .then(res => {
+    //             this.setState({
+    //                 toilet0: this.getData(res.data, 0),
+    //                 toilet1: this.getData(res.data, 1),
+    //                 toilet2: this.getData(res.data, 2),
+    //                 toilet3: this.getData(res.data, 3),
+    //                 toilet4: this.getData(res.data, 4),
+    //                 toilet5: this.getData(res.data, 5),
+    //                 toilet6: this.getData(res.data, 6),
+    //                 toilet7: this.getData(res.data, 7),
+    //                 toilet8: this.getData(res.data, 8),
+    //                 toilet9: this.getData(res.data, 9),
+    //                 toilet10: this.getData(res.data, 10),
+    //                 toilet11: this.getData(res.data, 11)
+    //             })
+    //         });
+    //     }, 1000);
+    // }
+
+    // componentDidUpdate() {
+    //     this.setState({
+    //         toilets: this.props.state
+    //     });
+    // }
 
     getData = (data, idx) => {
         return Object.keys(data[idx]).map(i => data[idx][i])[Object.keys(data[idx]).map(i => data[idx][i]).length - 1].status
@@ -88,9 +94,9 @@ class Overlay extends Component {
     render() {
         const allToilets = this.toilets.map(toilet => {
             const toiletName = toilet.name;
-            return <Toilet key={toilet.name} {...toilet} status={this.state[toiletName]}/>
+            return <Toilet key={toilet.name} {...toilet} status={this.props.state[toiletName]}/>
         })
-        console.log(this.state)
+
         return(
             <div className="overlay">
                 {allToilets}
