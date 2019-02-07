@@ -24,8 +24,7 @@ class Overlay extends Component {
         toilet11: 0,
         toilet12: 0,
         toilet13: 0,
-        toilet14: 0,
-        toilet15: 0
+        toilet14: 0
     };
 
     // componentWillMount() {
@@ -92,7 +91,10 @@ class Overlay extends Component {
         {left: '62.50%', top: '40.63%', name: 'toilet8'},
         {left: '62.50%', top: '47.50%', name: 'toilet9'},
         {left: '32.50%', top: '49.38%', name: 'toilet10'},
-        {left: '44.63%', top: '49.38%', name: 'toilet11'}
+        {left: '44.63%', top: '49.38%', name: 'toilet11'},
+        {left: '42.00%', top: '17.00%', name: 'toilet12'},
+        {left: '78.00%', top: '25.00%', name: 'toilet13'},
+        {left: '78.00%', top: '32.00%', name: 'toilet14'}
     ];
 
     render() {
@@ -105,6 +107,9 @@ class Overlay extends Component {
             <div className="overlay">
                 {allToilets}
                 <img className="mapImage" src={Meetingrooms} />
+                <div className="coffeeWorking">Coffee 1: Working</div>
+                <div className="coffeeWorking">Coffee 2: Working</div>
+                <div className="coffeeBroken">Coffee 3: Broken</div>
             </div>
         );
     }

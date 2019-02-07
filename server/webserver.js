@@ -13,7 +13,10 @@ var toilets = {
     toilet8: 0,
     toilet9: 0,
     toilet10: 0,
-    toilet11: 0
+    toilet11: 0,
+    toilet12: 0,
+    toilet13: 0,
+    toilet14: 0
 };
 
 var newToilets = {
@@ -28,7 +31,10 @@ var newToilets = {
     toilet8: 1,
     toilet9: 0,
     toilet10: 1,
-    toilet11: 0
+    toilet11: 0,
+    toilet12: 0,
+    toilet13: 0,
+    toilet14: 0
 };
 
 io.on('connection', (client) => {
